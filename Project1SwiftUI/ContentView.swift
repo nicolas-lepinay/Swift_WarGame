@@ -4,54 +4,43 @@ struct ContentView: View {
     var body: some View {
 
         ZStack {
-            Color(.systemMint).ignoresSafeArea()
-            
-            VStack(alignment: .leading, spacing: 20.0) {
-                
-                Image("falls")
-                    .resizable()
-                    .cornerRadius(30)
-                    .aspectRatio(contentMode: .fit)
-                
+            Image("background-plain")
+                .resizable()
+                .ignoresSafeArea()
+            VStack {
+                Spacer()
+                Image("logo")
+                Spacer()
                 HStack {
-                    Text("Niagara Falls")
-                        .font(.title)
-                        .fontWeight(.bold)
                     Spacer()
-                    
+                    Image("card2")
+                    Spacer()
+                    Image("card3")
+                    Spacer()
+                }
+                Spacer()
+                Image("button")
+                Spacer()
+                HStack {
+                    Spacer()
                     VStack {
-                        HStack {
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.fill")
-                            Image(systemName: "star.leadinghalf.fill")
-                        }
-                    
-                        Text("361 reviews")
+                        Text("Joueur").font(.headline).padding(.bottom, 9.0)
+                        Text("0").font(.largeTitle)
                     }
-                    .foregroundColor(.orange)
-                    .font(.caption)
-                    
-                }
-                Text("Come visit the falls for an experience of a lifetime.")
-                
-                HStack {
                     Spacer()
-                    Image(systemName: "fork.knife")
-                    Image(systemName: "binoculars.fill")
-                }
-                .foregroundColor(.gray)
+                    VStack {
+                        Text("Machine").font(.headline).padding(.bottom, 9.0)
+                        Text("0").font(.largeTitle)
+                    }
+                    Spacer()
+                    
+                }.foregroundColor(.white)
+                Spacer()
+                
             }
-            .padding()
-            .background(Rectangle()
-                .foregroundColor(.white)
-                .cornerRadius(30)
-                .shadow(radius: 10)
-            )
-            .padding()
+            
         }
-        
+
     }
 }
 
