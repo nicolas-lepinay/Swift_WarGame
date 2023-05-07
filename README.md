@@ -2,7 +2,7 @@
 
 🃏 Un simple jeu de bataille.
 
-⚙️ Développée avec 𝐒𝐰𝐢𝐟𝐭 pour iOS.
+⚙️ Développé avec 𝐒𝐰𝐢𝐟𝐭 pour iOS.
 
 👉 Contributeur : Nicolas Lépinay.
 
